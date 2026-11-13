@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F7F4EB">
+  <meta name="description" content="Maison Saveur: sabores da França com um toque brasileiro. Conheça nosso cardápio.">
+  <title>Maison Saveur | A França chegou ao Brasil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container barra-navegacao">
+      <a class="logo" href="index.html" aria-label="Maison Saveur, página inicial">
+        <img src="Logo.png" alt="">
+      </a>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#historia">Nossa história</a>  
+        <a href="#funcionamento">Como funciona</a>
+      </nav>
+      <div class="menu-acoes">
+        <a class="link-entrar" href="login.html">Entrar</a>
+        <a class="botao botao-pequeno" href="#cardapio">Conhecer o menu</a>
+        <a class="buscar" href=""></a>
+        <button class="botao botao-contorno" id="abrir-carrinho">
+          Carrinho <span id="contador-carrinho">0</span>
+        </button>
+      </div>
+      <a class="link-entrar" href="usuario.html">Minha conta</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="destaque container" aria-labelledby="titulo-inicio">
+      <div class="destaque-texto">
+        <p class="sobrelinha">BONJOUR! BEM-VINDO À MAISON SAVEUR</p>
+        <h1 id="titulo-inicio">A França<br>chegou<br>ao<br>BRASIL</h1>
+        <p>Croissants, doces e pratos franceses preparados com carinho. Um pedacinho de Paris para transformar seus dias em momentos especiais.</p>
+        <a class="botao" href="#cardapio">Explorar o cardápio <p aria-hidden="true"></p></a>
+      </div>
+      <div class="destaque-imagem">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=85" alt="Croissants dourados sobre uma mesa" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="cardapio" class="secao-cardapio container" aria-labelledby="titulo-cardapio">
+      <div class="titulo-secao">
+        <p class="sobrelinha">ESCOLHA SEU FAVORITO</p>
+        <h2 id="titulo-cardapio">À la carte</h2>
+        <p>Sabores especiais para qualquer momento do dia.</p>
+      </div>
+      <div class="categorias" aria-label="Categorias do cardápio">
+        <p class="categoria">Todos</p>
+        <p class="categoria">Café da manhã</p>
+        <p class="categoria">Pratos especiais</p>
+        <p class="categoria">Doces</p>
+      </div>
+
+      <div class="grade-produtos">
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80" alt="Croissant francês amanteigado" loading="lazy">
+          <div class="produto-informacoes"><h3>Croissant au beurre</h3><p>Clássico francês, crocante e amanteigado.</p><div class="produto-rodape"><strong>R$ 16,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=900&q=80" alt="Doces franceses assados" loading="lazy">
+          <div class="produto-informacoes"><h3>Pain au chocolat</h3><p>Massa folhada delicada com chocolate.</p><div class="produto-rodape"><strong>R$ 19,90</strong><sppan aria-hidden="true"></p></div></div>
+            <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Prato salgado com ingredientes frescos" loading="lazy">
+          <div class="produto-informacoes"><h3>Quiche de alho-poró</h3><p>Recheio cremoso e massa douradinha.</p><div class="produto-rodape"><strong>R$ 29,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80" alt="Legumes frescos organizados em um prato" loading="lazy">
+          <div class="produto-informacoes"><h3>Ratatouille</h3><p>Legumes assados e temperos aromáticos.</p><div class="produto-rodape"><strong>R$ 34,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80" alt="Prato francês servido à mesa" loading="lazy">
+          <div class="produto-informacoes"><h3>Boeuf bourguignon</h3><p>Prato reconfortante da culinária francesa.</p><div class="produto-rodape"><strong>R$ 54,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Prato com ingredientes selecionados" loading="lazy">
+          <div class="produto-informacoes"><h3>Soupe à l'oignon</h3><p>Sopa tradicional de cebola gratinada.</p><div class="produto-rodape"><strong>R$ 28,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="Macarons.png" alt="Macarons franceses coloridos" loading="lazy">
+          <div class="produto-informacoes"><h3>Macarons</h3><p>Docinhos delicados de diferentes sabores.</p><div class="produto-rodape"><strong>R$ 24,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80" alt="Panquecas doces acompanhadas de frutas" loading="lazy">
+          <div class="produto-informacoes"><h3>Crêpe Suzette</h3><p>Crepe fininho com um toque cítrico.</p><div class="produto-rodape"><strong>R$ 25,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button>
+        </article>
+
+
+        <article class="produto">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="Sobremesa francesa servida em uma mesa" loading="lazy">
+          <div class="produto-informacoes"><h3>Tarte Tatin</h3><p>Torta invertida de maçã caramelizada.</p><div class="produto-rodape"><strong>R$ 27,90</strong><p aria-hidden="true"></p></div></div>
+          <button
+  class="adicionar"
+  type="button"
+  data-id="croissant"
+  data-nome="Croissant au beurre"
+  data-preco="16.90"
+>
+  Adicionar <span>＋</span>
+</button> 
+        </article>
+      </div>
+    </section>
+
+    <section class="banner container" aria-labelledby="titulo-banner">
+      <div class="banner-texto">
+        <p class="sobrelinha">UM POUCO DE DOÇURA</p>
+        <h2 id="titulo-banner">Um toque francês.<br>Um doce momento.<br>Um preço amigo.</h2>
+        <p>Descubra sabores que transformam os pequenos momentos em grandes lembranças.</p>
+        <a class="botao botao-azul" href="#cardapio">Ver nossas delícias </a>
+      </div>
+      <img src="Macarons.png" alt="Macarons franceses coloridos" loading="lazy" class="Macarons">
+    </section>
+
+    <section id="historia" class="historia container" aria-labelledby="titulo-historia">
+      <div><p class="sobrelinha">BONJOUR, BRASIL!</p><h2 id="titulo-historia">O encontro da França<br>com o Brasil.</h2></div>
+      <div class="historia-conteudo"><p>A Maison Saveur nasceu da paixão pela gastronomia francesa e pela alegria brasileira. Unimos receitas clássicas, ingredientes selecionados e um cuidado especial em cada preparo.</p><p>Queremos que cada mordida pareça uma viagem, sem precisar sair de perto de quem você ama.</p><a href="#funcionamento">Conheça nossa experiência <p aria-hidden="true"></p></a></div>
+    </section>
+
+    <section id="funcionamento" class="perguntas container" aria-labelledby="titulo-perguntas">
+      <div><p class="sobrelinha">TEM ALGUMA DÚVIDA?</p><h2 id="titulo-perguntas">Como funciona?</h2><p>Algumas respostas para você aproveitar tudo.</p></div>
+      <div class="lista-perguntas">
+      <details><summary class="icone1">Como faço meu pedido? <p id="icone">+</p></summary><p>Explore o cardápio e entre em contato com nossa equipe. A compra on-line ainda não está integrada nesta demonstração.</p> </details>
+      <details><summary class="icone2">Vocês fazem entregas? <p id="icone">+</p></summary><p>Consulte a equipe para confirmar as regiões atendidas e a disponibilidade de entrega.</p></details>
+      <details><summary class="icone3">Os produtos são feitos na hora? <p id="icone">+</p></summary><p>Trabalhamos com preparos cuidadosos. A disponibilidade varia conforme o produto.</p></details>
+      <details><summary class="icone4">Quais formas de pagamento são aceitas? <p id="icone">+</p></summary><p>Consulte a equipe para saber as formas de pagamento disponíveis.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <img src="Logo.png" alt="Maison Saveur" class="rodape-logo">
+      <p>Um pedacinho da França feito com carinho no Brasil.</p>
+    </div>
+  </footer>
+  <div class="fundo-modal" id="fundo-modal" hidden>
+  <section
+    class="carrinho-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="titulo-carrinho"
+  >
+    <div class="modal-topo">
+      <div>
+        <span class="sobretitulo">SEU PEDIDO</span>
+        <h2 id="titulo-carrinho">Meu carrinho</h2>
+      </div>
+      <button class="fechar-modal" id="fechar-carrinho" aria-label="Fechar">
+        ×
+      </button>
+    </div>
+
+    <div id="itens-carrinho" class="itens-carrinho"></div>
+
+    <div class="total-carrinho">
+      <span>Total</span>
+      <strong id="total-carrinho">R$ 0,00</strong>
+    </div>
+
+    <button class="botao botao-azul botao-finalizar" id="finalizar-pedido">
+      Finalizar pelo WhatsApp ↗
+    </button>
+
+    <button class="limpar-carrinho" id="limpar-carrinho">
+      Limpar carrinho
+    </button>
+
+    <p class="aviso-carrinho">
+      Demonstração: configure o número de WhatsApp no arquivo script.js antes de publicar.
+    </p>
+  </section>
+</div>
+<div class="fundo-modal" id="fundo-modal" hidden>
+  <section
+    class="carrinho-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="titulo-carrinho"
+  >
+    <div class="modal-topo">
+      <div>
+        <span class="sobretitulo">Seu pedido</span>
+        <h2 id="titulo-carrinho">Meu carrinho</h2>
+      </div>
+
+      <button
+        class="fechar-modal"
+        id="fechar-carrinho"
+        type="button"
+        aria-label="Fechar carrinho"
+      >
+        ×
+      </button>
+    </div>
+
+    <div id="itens-carrinho" class="itens-carrinho"></div>
+
+    <div class="total-carrinho">
+      <span>Total</span>
+      <strong id="total-carrinho">R$ 0,00</strong>
+    </div>
+
+    <button
+      class="botao botao-azul botao-finalizar"
+      id="finalizar-pedido"
+      type="button"
+    >
+      Finalizar pelo WhatsApp
+    </button>
+
+    <button
+      class="limpar-carrinho"
+      id="limpar-carrinho"
+      type="button"
+    >
+      Limpar carrinho
+    </button>
+  </section>
+</div>
+<script src="java.js"></script>
+</body>
+</html>

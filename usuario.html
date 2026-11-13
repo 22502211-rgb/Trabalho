@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha conta | Maison Saveur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="usuario.css">
+  <script src="java.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="container barra-navegacao">
+      <a class="logo" href="index.html" aria-label="Maison Saveur, página inicial">
+        <img src="Logo Maison.png" alt="Maison Saveur">
+      </a>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="index.html#cardapio">Cardápio</a>
+        <a href="index.html#historia">Nossa história</a>
+        <a href="index.html#funcionamento">Como funciona</a>
+      </nav>
+
+      <div class="menu-acoes">
+        <a class="link-entrar" href="usuario.html">Minha conta</a>
+        <a class="botao botao-pequeno" href="index.html#cardapio">Conhecer o menu</a>
+        <a class="botao botao-contorno" href="index.html#cardapio">Ver cardápio</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pagina-usuario container">
+    <div class="usuario-cabecalho">
+      <p class="sobrelinha">Área do cliente</p>
+      <h1>Minha conta</h1>
+      <p>Acompanhe seus dados, pedidos e favoritos.</p>
+    </div>
+
+    <div class="usuario-grade">
+      <aside class="usuario-menu">
+        <div class="usuario-resumo">
+          <div class="usuario-avatar" aria-hidden="true">M</div>
+          <h2>Olá, cliente!</h2>
+          <p id="email-usuario"></p>
+        </div>
+
+        <nav class="usuario-links" aria-label="Menu da conta">
+          <a class="ativo" href="#dados">Meus dados</a>
+          <a href="#pedidos">Meus pedidos</a>
+          <a href="#endereco">Endereço</a>
+          <a href="#favoritos">Favoritos</a>
+        </nav>
+      </aside>
+
+      <div class="usuario-conteudo">
+        <section class="usuario-cartao" id="dados">
+          <h2>Meus dados</h2>
+
+          <div class="dados-usuario">
+            <div class="dado">
+              <strong>Nome</strong>
+              <span>Cliente Maison Saveur</span>
+            </div>
+            <div class="dado">
+              <strong>E-mail</strong>
+              <span>cliente@email.com</span>
+            </div>
+            <div class="dado">
+              <strong>Telefone</strong>
+              <span>Não informado</span>
+            </div>
+            <div class="dado">
+              <strong>Cadastro</strong>
+              <span>Conta de demonstração</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="usuario-cartao" id="pedidos">
+          <h2>Meus pedidos</h2>
+          <p class="pedido-vazio">
+            Seus pedidos aparecerão aqui. Ainda não há pedidos vinculados a esta conta.
+          </p>
+          <div class="usuario-acoes">
+            <a class="botao" href="index.html#cardapio">Explorar o cardápio</a>
+          </div>
+        </section>
+
+        <section class="usuario-cartao" id="endereco">
+          <h2>Endereço de entrega</h2>
+          <p class="pedido-vazio">
+            Você ainda não adicionou um endereço de entrega.
+          </p>
+          <div class="usuario-acoes">
+            <a class="usuario-botao-secundario" href="index.html#funcionamento">
+              Consultar informações de entrega
+            </a>
+          </div>
+        </section>
+
+        <section class="usuario-cartao" id="favoritos">
+          <h2>Meus favoritos</h2>
+          <p class="pedido-vazio">
+            Seus produtos favoritos aparecerão aqui.
+          </p>
+          <div class="usuario-acoes">
+            <a class="usuario-botao-secundario" href="index.html#cardapio">
+              Ver produtos
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
